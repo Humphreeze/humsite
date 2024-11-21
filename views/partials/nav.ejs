@@ -1,0 +1,27 @@
+<div class="nav">
+    <ul>
+       <% if(user){ %>
+            <li><p>welcome <%=user.email %></p></li>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/register">CREATE ACCOUNT</a></li>
+            <li><a href="/login">LOGIN</a></li>
+            <li><a href="/logoutpage">LOGOUT-PAGE</a></li>
+            <li><a href="/add">ADD-BLOG</a></li>
+           
+        <% }else{ %>
+            <li><a href="/register">CREATE ACCOUNT</a></li>
+            <li><a href="/login">LOGIN</a></li>
+        <% } %>
+        <!-- <li><a href="/">HOME</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/register">CREATE ACCOUNT</a></li>
+        <li><a href="/login">LOGIN</a></li>
+        <li><a href="/logout">LOGOUT</a></li>
+        <li><a href="/add">ADD-BLOG</a></li> -->
+       
+        
+    </ul>
+    
+    <hr>
+</div>

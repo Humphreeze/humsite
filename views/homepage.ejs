@@ -1,0 +1,37 @@
+<div class="home">
+
+    <h1>BLOGS  AND VLOGS ON TORRENT</h1>
+    
+<div class="homecontents">
+     
+    <ul class="category">
+      <li><a href="/allposts">all posts</a></li>
+      <li><a href="yourposts">your posts</a></li>
+  </ul>
+  <hr>
+
+  <ul class="posts">
+  <%  if(result.length > 0){ %>
+   <%  result.forEach(function(val){ %>
+      <li>
+        <span class="title"><a href="<% val._id %>"><%= val.title %></a> </span><div class="icons"><span><button id="comment"><img src="/comment-icon-flat-design-on-transparent-background-vector-35514127.jpg" alt="comments icon"></button></span> <span><button>delete</button></span></div>
+        
+      </li>
+      <div class="coment-sec">
+        <ul class="comments">
+        <li></li>
+        </ul>
+        <form action="">
+         <input type="text" name="comment" placeholder="enter a comment" class="comment">
+         <button>COMMENT</button>
+        </form>
+       </div>
+   <%  }) %>
+  <%  }else{ %>
+    <p>no uploads available yet</p>
+  <%  } %>
+  </ul>
+</div>
+
+
+</div>
