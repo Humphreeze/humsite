@@ -1,0 +1,26 @@
+header{
+    align-content: center;
+}
+
+h1{
+    font-size: 50px;
+    padding-left: 30%;
+    font-style: italic;
+
+}
+
+.prt1{
+    width: 100%;
+    height: auto;
+    border: solid 2px red;
+
+}
+
+
+.story1{
+    float: right;
+    color: red;
+    width: 50%;
+}
+
+
